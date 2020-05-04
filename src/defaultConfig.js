@@ -11,5 +11,5 @@ module.exports = {
         "resources/**/*.twig",
     ],
     defaultExtractor: (content) => content.match(/[\w-/.:]+(?<!:)/g) || [],
-    whitelistPatterns: [/-active$/, /-enter$/, /-leave-to$/],
+    whitelistPatterns: [/-active$/, /-enter$/, /-leave-to$/, /show$/],
 };
