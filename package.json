@@ -1,6 +1,6 @@
 {
     "name": "postcss-purgecss-laravel",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "description": "postcss-purgecss wrapper with sensible defaults for Laravel apps",
     "main": "src/index.js",
     "repository": {
@@ -21,7 +21,7 @@
         "test": "jest"
     },
     "dependencies": {
-        "@fullhuman/postcss-purgecss": "^2.1.2"
+        "@fullhuman/postcss-purgecss": "^3.0.0"
     },
     "devDependencies": {
         "jest": "^25.4.0",

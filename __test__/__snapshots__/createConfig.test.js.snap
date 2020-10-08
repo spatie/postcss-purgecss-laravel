@@ -15,6 +15,14 @@ Object {
     "vendor/spatie/menu/**/*.php",
   ],
   "defaultExtractor": [Function],
+  "safelist": Object {
+    "greedy": Array [
+      /-active\\$/,
+      /-enter\\$/,
+      /-leave-to\\$/,
+      /show\\$/,
+    ],
+  },
   "whitelistPatterns": Array [],
 }
 `;
@@ -34,12 +42,14 @@ Object {
     "vendor/spatie/menu/**/*.php",
   ],
   "defaultExtractor": [Function],
-  "whitelistPatterns": Array [
-    /-active\\$/,
-    /-enter\\$/,
-    /-leave-to\\$/,
-    /show\\$/,
-  ],
+  "safelist": Object {
+    "greedy": Array [
+      /-active\\$/,
+      /-enter\\$/,
+      /-leave-to\\$/,
+      /show\\$/,
+    ],
+  },
 }
 `;
 
@@ -49,12 +59,14 @@ Object {
     "resource/js/**/*.js",
   ],
   "defaultExtractor": [Function],
-  "whitelistPatterns": Array [
-    /-active\\$/,
-    /-enter\\$/,
-    /-leave-to\\$/,
-    /show\\$/,
-  ],
+  "safelist": Object {
+    "greedy": Array [
+      /-active\\$/,
+      /-enter\\$/,
+      /-leave-to\\$/,
+      /show\\$/,
+    ],
+  },
 }
 `;
 
@@ -72,11 +84,13 @@ Object {
     "resources/**/*.twig",
   ],
   "defaultExtractor": [Function],
-  "whitelistPatterns": Array [
-    /-active\\$/,
-    /-enter\\$/,
-    /-leave-to\\$/,
-    /show\\$/,
-  ],
+  "safelist": Object {
+    "greedy": Array [
+      /-active\\$/,
+      /-enter\\$/,
+      /-leave-to\\$/,
+      /show\\$/,
+    ],
+  },
 }
 `;
