@@ -12,7 +12,7 @@ A simple wrapper around `postcss-purgecss` with sensible defaults for Laravel ap
 module.exports = {
     plugins: [
         require('postcss-purgecss-laravel')({
-            whitelistPatterns: [/hljs/],
+            safelist: [/hljs/],
             extend: {
                 content: [content: [path.join(__dirname, 'vendor/spatie/menu/**/*.php')],]
             },
@@ -63,7 +63,7 @@ All options passed to the plugin get passed down to PurgeCSS. Refer to the [Purg
 module.exports = {
     plugins: [
         require('postcss-purgecss-laravel')({
-            whitelistPatterns: [/hljs/],
+            safelist: [/hljs/],
         }),
     ],
 };
@@ -78,14 +78,14 @@ module.exports = {
     plugins: [
         require('postcss-purgecss-laravel')({
             extend: {
-                whitelistPatterns: [/hljs/],
+                safelist: [/hljs/],
             },
         }),
     ],
 };
 ```
 
-In the above example, the `/hljs/` pattern will be _added_ to the `whitelistPatterns`, instead of overriding the default `whitelistPatterns` option.
+In the above example, the `/hljs/` pattern will be _added_ to the `safelist`, instead of overriding the default `safelist` option.
 
 These are the defaults this package provides:
 
@@ -103,7 +103,7 @@ const defaultConfig = {
         "resources/**/*.twig",
     ],
     defaultExtractor: (content) => content.match(/[\w-/.:]+(?<!:)/g) || [],
-    whitelistPatterns: [/-active$/, /-enter$/, /-leave-to$/, /show$/],
+    safelist: [/-active$/, /-enter$/, /-leave-to$/, /show$/],
 };
 ```
 

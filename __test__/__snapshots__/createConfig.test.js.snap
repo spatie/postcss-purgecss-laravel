@@ -23,7 +23,7 @@ Object {
       /show\\$/,
     ],
   },
-  "whitelistPatterns": Array [],
+  "safelist": Array [],
 }
 `;
 

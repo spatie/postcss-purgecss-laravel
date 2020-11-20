@@ -24,7 +24,7 @@ test("it can extend the default config", () => {
 
 test("it can extend and override the default config", () => {
     const config = {
-        whitelistPatterns: [],
+        safelist: [],
         extend: {
             content: ["vendor/spatie/menu/**/*.php"],
         },
