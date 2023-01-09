@@ -12,6 +12,6 @@ module.exports = {
     ],
     defaultExtractor: (content) => content.match(/[\w-/.:]+(?<!:)/g) || [],
     safelist: {
-        greedy: [/-active$/, /-enter$/, /-leave-to$/, /show$/],
+        greedy: [/-active$/, /-enter$/, /-leave-to$/, /show$/, /collaps/],
     },
 };
