@@ -53,7 +53,7 @@ Register the PostCSS plugin.
 
 module.exports = {
     plugins: [
-        require('postcss-purgecss-laravel')(/* ... */);
+        require('postcss-purgecss-laravel')(/* ... */),
     ]
 }
 ```
