@@ -17,7 +17,7 @@ module.exports = {
         require('postcss-purgecss-laravel')({
             safelist: [/hljs/],
             extend: {
-                content: [content: [path.join(__dirname, 'vendor/spatie/menu/**/*.php')],]
+                content: [path.join(__dirname, 'vendor/spatie/menu/**/*.php')],
             },
         });
     ],
@@ -53,7 +53,7 @@ Register the PostCSS plugin.
 
 module.exports = {
     plugins: [
-        require('postcss-purgecss-laravel')(/* ... */);
+        require('postcss-purgecss-laravel')(/* ... */),
     ]
 }
 ```
